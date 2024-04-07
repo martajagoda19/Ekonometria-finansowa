@@ -13,8 +13,11 @@ library(vars)
 
 
 #zaimportowanie danych
-dane=read.csv(file="/Users/polajankowska/Desktop/UG/III semestr/Ćwiczenia Lech/dane/bfc_d.csv", header=TRUE)
-dane2=read.csv(file="/Users/polajankowska/Desktop/UG/III semestr/Ćwiczenia Lech/dane/wig20_d.csv", header=TRUE)
+# Dla pierwszego pliku CSV
+dane <- read.csv(file = "dane/bfc_d.csv", header = TRUE)
+# Dla drugiego pliku CSV
+dane2 <- read.csv(file = "dane/wig20_d.csv", header = TRUE)
+
 dane[1:5,]
 dane[(nrow(dane)-5):nrow(dane),]
 dane2[1:5,]
